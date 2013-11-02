@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-BASH_IT="$HOME/.bash_it"
+BASH_IT="$HOME/dibayendu/repositories/bash-it"
 
 test -w $HOME/.bash_profile &&
   cp $HOME/.bash_profile $HOME/.bash_profile.bak &&
   echo "Your original .bash_profile has been backed up to .bash_profile.bak"
 
-cp $HOME/.bash_it/template/bash_profile.template.bash $HOME/.bash_profile
+cp $HOME/dibayendu/repositories/bash-it/template/bash_profile.template.bash $HOME/.bash_profile
 
 echo "Copied the template .bash_profile into ~/.bash_profile, edit this file to customize bash-it"
 
@@ -16,7 +16,7 @@ do
   case $RESP
     in
     [yY])
-      cp $HOME/.bash_it/template/jekyllconfig.template.bash $HOME/.jekyllconfig
+      cp $HOME/dibayendu/repositories/bash-it/template/jekyllconfig.template.bash $HOME/.jekyllconfig
       echo "Copied the template .jekyllconfig into your home directory. Edit this file to customize bash-it for using the Jekyll plugins"
       break
       ;;

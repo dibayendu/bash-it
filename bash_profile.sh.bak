@@ -1,0 +1,3 @@
+[[ -r ~/.bashrc ]] && . ~/.bashrc
+# Added by install_latest_perl_osx.pl
+[ -r /Users/fridaymedia/.bashrc ] && source /Users/fridaymedia/.bashrc
